@@ -135,8 +135,7 @@ def browser_auto():
 
     # audio_op = "saint motel a good song never dies"
 
-    # not sure why there's a 4 second sleep timer
-    #time.sleep(4)
+    
 
     elem.send_keys(audio_op)
 
@@ -219,19 +218,8 @@ if __name__ == "__main__":
         elif 'open youtube' in str(text):
             assistant_speaks('opening youtube')
             browser_auto()
-            #time.sleep(300)
+            time.sleep(300)
 
-
-
-        '''elif 'email Aishwarya' in str(text):
-
-            mail2A()
-            time.sleep(2)
-
-            assistant_speaks('mail send to aishwarya')'''
-
-
-  
         if "exit" in str(text) or "bye" in str(text) or "sleep" in str(text): 
             assistant_speaks("Ok bye, "+ name+'.') 
             break
